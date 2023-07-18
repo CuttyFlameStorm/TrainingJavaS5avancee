@@ -6,9 +6,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Utilisateur {
-    private List<Utilisateurs> utilisateurs;
+	
 
-    public Utilisateur() {
+	private List<Utilisateurs> utilisateurs;
+
+    public Utilisateur(int i, String string, String string2, String string3) {
         this.utilisateurs = new ArrayList<>();
     }
 

@@ -1,6 +1,7 @@
 package Application;
 
 import java.time.LocalDate;
+import java.util.List;
 
 import fr.eni.annuaire.bo.Adresse;
 import fr.eni.annuaire.bo.Contact;
@@ -13,6 +14,36 @@ import fr.eni.annuaire.data.Utilisateurs;
 public class App1 {
 
 	public static void main(String[] args) {
+		
+		System.out.println("Partie 1 - Tests de la couche métier.");
+		//partie utilisateur
+		List<Utilisateur> tempUsers = List.of(
+				new Utilisateur(1, "ju", "Julie", "Pa$$wprd"),
+				new Utilisateur(2, "Cha", "Charline", "Pa$$w0rd"),
+				new Utilisateur(3, "Jus", "Justin", "Pa$$w0rd")
+				);
+		Utilisateurs usersContainer = new Utilisateurs(tempUsers);
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
         // Création d'adresses
         Adresse adresse1 = new Adresse(1234, "Rue des Fleurs", "75000", "Paris");
         Adresse adresse2 = new Adresse(5678, "Avenue des Champs-Élysées", "75008", "Paris");
