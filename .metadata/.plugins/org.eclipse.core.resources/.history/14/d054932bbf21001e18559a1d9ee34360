@@ -1,0 +1,20 @@
+package genericite;
+
+public class Couple<T> {
+	private T a;
+	private T b;
+	
+	// constructor sans parametre
+	public Couple() {
+		super();
+	}
+
+	// constructor avec parametre
+	public Couple(T a, T b) {
+		super();
+		this.a = a;
+		this.b = b;
+	}
+	
+	
+}

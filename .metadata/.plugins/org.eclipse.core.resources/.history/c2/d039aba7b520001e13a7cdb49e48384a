@@ -1,0 +1,23 @@
+package demonstration;
+
+import java.util.Scanner;
+
+public class App1 {
+
+	public static void main(String[] args) {
+		Scanner clavier = new Scanner(System.in);
+		System.out.print("A : "); int a = clavier.nextInt();
+		System.out.print("B : "); int b = clavier.nextInt();
+		int c = 0;
+		try {
+			c = a/b;
+		}
+		catch (ArithmeticException e) {
+			System.out.println("Division par zéro");
+		}
+		System.out.println("C = "+c);
+		
+
+	}
+
+}

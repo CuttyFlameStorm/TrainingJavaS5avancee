@@ -1,0 +1,57 @@
+package DeclarationException1_app4_exceptionPersonnalise_tryCatch_general;
+
+import java.util.InputMismatchException;
+import java.util.Scanner;
+
+import metier_ExempleDeclarationException2.Compte;
+
+public class App3 {
+
+
+	public static void main(String[] args) { //ici throw est déclaré au niveau de la méthode main directement. mais dans ce cas il sera plus difficle de personnaliser l'erreur detecté.
+		Compte cp = null;
+		int c = 0;
+		float s = 0;
+		
+		
+		try {
+			//**********************************
+			Scanner clavier = new Scanner(System.in);
+			try {
+				System.out.print("Code : ");  c = clavier.nextInt();
+			} catch (InputMismatchException e) {
+				System.out.println("problème de saisie");
+			}
+			//**********************************
+			try {
+				System.out.print("Solde : ");  s = clavier.nextFloat();
+			} catch (InputMismatchException e) {
+				System.out.println("problème de saisie");
+			}
+			cp = new Compte(c, s);
+			//**********************************
+			try {
+				System.out.print("Montant à verser : ");
+				float mt1 = clavier.nextFloat();
+				cp.verser(mt1);
+			} catch (Exception e) {
+				System.out.println("problème de saisie");
+			}
+			//**********************************
+			try {
+				System.out.println("Montant à retirer : ");
+			float mt2 = clavier.nextFloat();
+			cp.retirer(mt2);
+			} catch (Exception e) {
+				System.out.println("problème de saisie");
+			}
+	
+		}
+		catch (Exception e) {
+			System.out.println(e.getMessage());
+		}
+		
+		System.out.println("Solde est : "+ cp.getSolde());
+	}
+
+}

@@ -1,0 +1,12 @@
+package genericite;
+
+
+//il ya 2 scenarion !
+	// 1er scénario est que la class Triplet reste elle même générique :
+//1er scénario est que la class Triplet reste elle même générique :
+// dans ce cas on va spécifier le <t> devant Triplet
+public class Triplet<T> extends Couple<T>{
+	
+
+}
+ 

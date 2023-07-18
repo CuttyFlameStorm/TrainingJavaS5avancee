@@ -1,0 +1,47 @@
+package Application;
+
+import java.time.LocalDate;
+
+import fr.eni.annuaire.bo.Adresse;
+import fr.eni.annuaire.bo.Contact;
+import fr.eni.annuaire.bo.Personnel;
+import fr.eni.annuaire.bo.Professionnel;
+import fr.eni.annuaire.bo.Utilisateur;
+
+public class App1 {
+
+	public static void main(String[] args) {
+        // Création d'une adresse
+        Adresse adresse = new Adresse(1234, "Rue des Fleurs", "75000", "Paris");
+
+        // Création d'un utilisateur
+        Utilisateur utilisateur = new Utilisateur(1, "John Doe", "johndoe", "password");
+
+        // Création d'une liste d'utilisateurs
+        Utilisateur utilisateurListe = new Utilisateur();
+        utilisateurListe.ajouterUtilisateur(utilisateur);
+
+        // Création d'une date d'anniversaire
+        LocalDate dateAnniversaire = LocalDate.of(1990, 5, 15);
+
+        // Création d'une personne
+        Personnel personnel = new Personnel(dateAnniversaire);
+
+        // Création d'une entreprise
+        Professionnel professionnel = new Professionnel(1, "ACME Corp", "0123456789", "contact@acme.com", adresse, "ACME Corp");
+
+        // Création d'un contact
+        Contact contact = new Contact(1, "John Smith", "0123456789", "john.smith@example.com", true, adresse, personnel, professionnel);
+
+        // Ajout du contact à la liste de contacts
+        Contact contactListe = new Contact();
+        contactListe.ajouterContact(contact);
+
+        // Affichage des utilisateurs
+        System.out.println(utilisateurListe.toString());
+
+        // Affichage des contacts
+        System.out.println(contactListe.toString());
+    }
+
+}

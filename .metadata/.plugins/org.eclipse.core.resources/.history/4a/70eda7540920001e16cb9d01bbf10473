@@ -1,0 +1,12 @@
+package polimorphisme;
+
+public abstract class Fruit {
+
+	public Fruit() {
+	System.out.println("creation d'un fruit");	
+	}
+	
+	public void affiche() {
+		
+	}
+}

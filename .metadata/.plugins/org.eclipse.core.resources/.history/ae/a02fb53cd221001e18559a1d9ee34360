@@ -1,0 +1,16 @@
+package methodeGenerique_dansUneClasseStandard;
+
+import java.io.Serializable;
+
+//** ici il s'agit d'un type generiquque qui herite uniquement de la classe Produit**
+public class Traitement<T extends Produit & Serializable & Cloneable> {
+/*
+ * note : on peut etendre plusieurs class !
+ * Cloneable est un design Pattern qui utilise des prototypes! 
+ * 
+ * */
+	public Traitement() {
+		
+	}
+
+}

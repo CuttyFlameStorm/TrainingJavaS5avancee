@@ -1,0 +1,20 @@
+package ArrayList_et_Collection_avecPolymorphisme;
+
+import java.util.ArrayList;
+
+import polimorphisme.Fruit;
+
+public class Appli2_ArrayEtCollectionParPolymorphisme {
+
+	public static void main(String[] args) {
+		System.out.println("activation de Appli2");
+		// ** utilisation d'une Arrays liste qui ne nécessite pas d'être défini en nombre de ligne au depart
+		//Exemple :
+		ArrayList<Fruit> fruits = new ArrayList<Fruit>();
+		
+		                         
+		
+
+	}
+
+}

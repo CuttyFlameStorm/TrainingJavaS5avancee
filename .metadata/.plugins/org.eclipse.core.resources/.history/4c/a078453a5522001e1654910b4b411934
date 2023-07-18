@@ -1,0 +1,9 @@
+package App;
+
+public interface IAppareil {
+
+	public void enregistrer(Contact c);
+	public void enregistrer(Appel a, String numTel);
+	public Contact consulter(int numero) throws Exception;
+	
+}

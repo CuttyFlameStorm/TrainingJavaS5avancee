@@ -1,0 +1,9 @@
+package genericite;
+
+public class MetierProduitImpl {
+
+	public MetierProduitImpl() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

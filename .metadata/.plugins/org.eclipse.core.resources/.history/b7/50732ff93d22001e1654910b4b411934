@@ -1,0 +1,12 @@
+package Applications_Package;
+
+import java.net.ServerSocket;
+
+public class Serveur {
+
+	public static void main(String[] args) {
+		ServerSocket ss = new ServerSocket(234);
+
+	}
+
+}

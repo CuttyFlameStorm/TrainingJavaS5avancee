@@ -1,0 +1,45 @@
+package Application;
+
+import java.time.LocalDate;
+
+import fr.eni.annuaire.bo.Adresse;
+import fr.eni.annuaire.bo.Contact;
+import fr.eni.annuaire.bo.Personnel;
+import fr.eni.annuaire.bo.Professionnel;
+import fr.eni.annuaire.bo.Utilisateur;
+import fr.eni.annuaire.data.Contacts;
+import fr.eni.annuaire.data.Utilisateurs;
+
+public class App1 {
+
+	public static void main(String[] args) {
+        // Création d'une adresse
+        Adresse adresse = new Adresse(1234, "Rue des Fleurs", "75000", "Paris");
+
+        // Création d'un utilisateur
+        Utilisateur utilisateur = new Utilisateur();
+        Utilisateurs utilisateurs = new Utilisateurs(1, "seraphin", "Jimbei", "passDeTest");
+        utilisateur.ajouterUtilisateur(utilisateurs);
+
+        // Création d'une date d'anniversaire
+        LocalDate dateAnniversaire = LocalDate.of(1990, 5, 15);
+
+        // Création d'une personne
+        Personnel personnel = new Personnel(dateAnniversaire);
+
+        // Création d'une entreprise
+        Professionnel professionnel = new Professionnel(1, "Luffy test", "0123456789", "contact@gmail.com", adresse, "OnePiece");
+
+        // Création d'un contact
+        Contact contact = new Contact();
+        Contacts contacts = new Contacts(1, "John Lee", "0123456789", "john.lee@outlook.com", true, adresse, personnel, professionnel);
+        contact.ajouterContact(contacts);
+
+        // Affichage des utilisateurs
+        System.out.println(utilisateur.toString());
+
+        // Affichage des contacts
+        System.out.println(contact.toString());
+    }
+
+}

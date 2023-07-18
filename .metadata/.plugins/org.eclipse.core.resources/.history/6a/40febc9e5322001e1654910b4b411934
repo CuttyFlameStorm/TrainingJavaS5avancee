@@ -1,0 +1,12 @@
+package App;
+
+public class AppelEmi extends Appel {
+
+	@Override
+	public double cout() {
+		// TODO Auto-generated method stub
+		return dureeAppel*2;
+	}
+	
+
+}

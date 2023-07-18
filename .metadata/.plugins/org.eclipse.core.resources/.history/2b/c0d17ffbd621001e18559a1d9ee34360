@@ -1,0 +1,5 @@
+package InterfaceGenerique;
+
+public interface IMetier {
+
+}

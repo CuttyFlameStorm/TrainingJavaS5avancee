@@ -1,0 +1,34 @@
+package Applications_Package;
+
+import java.io.IOException;
+import java.io.InputStream;
+import java.net.Socket;
+
+public class ServiceClient extends Thread {
+
+	private int numero;
+	private Socket client;
+	
+	public ServiceClient(Socket client, int numero) {
+		this.numero = numero;
+		this.client = client;
+	}
+	
+	@Override
+	public void run() {
+		try {
+			InputStream is = client.getInputStream();
+		} catch (IOException e) {
+			// TODO: handle exception
+		}
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+}

@@ -1,0 +1,14 @@
+package polimorphisme;
+
+public class Application {
+
+	public static void main(String[] args) {
+		Pomme p = new Pomme(40);
+		Orange o = new Orange(50);
+		
+		Fruit f = new Pomme(50); // ceci est un "SURCASTING" implicite !  de class.
+		Fruit f2 = (Fruit) new Pomme(50); // ceci est appelé un SURCASTING explicite! de class.
+
+	}
+
+}

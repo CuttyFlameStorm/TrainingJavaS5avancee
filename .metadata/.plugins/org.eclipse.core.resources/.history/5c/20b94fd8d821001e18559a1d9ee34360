@@ -1,0 +1,9 @@
+package genericite;
+
+import InterfaceGenerique.IMetier;
+
+public class MetierProduitImpl implements IMetier<Produit, Long>{
+
+	
+
+}

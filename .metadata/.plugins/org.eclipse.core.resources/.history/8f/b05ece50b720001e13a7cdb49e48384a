@@ -1,0 +1,28 @@
+package metier;
+
+public class Compte {
+
+	private int code;
+	private float solde;
+	
+	//Constructeur avec parametre
+	public Compte(int code, float solde) {
+		super();
+		this.code = code;
+		this.solde = solde;
+	}
+	
+	//Méthode verser
+	public void verser(float mt) {
+		solde = solde+mt;
+	}
+	
+	//Méthode retirer
+	public void retirer(float mt) {
+		solde = solde-mt;
+	}
+	
+	
+	
+
+}

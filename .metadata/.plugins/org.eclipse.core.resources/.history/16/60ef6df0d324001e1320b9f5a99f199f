@@ -1,0 +1,11 @@
+package fr.eni.annuaire.data;
+
+public record Contacts(long numero, String nom, String telephone, String adresseMail, boolean favoris) {
+	
+	 public Contact toContact() {
+	        return new Contact(numero, nom, telephone, adresseMail, favoris);
+	    }
+	
+}
+
+

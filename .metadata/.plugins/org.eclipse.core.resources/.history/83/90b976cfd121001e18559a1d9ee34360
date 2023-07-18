@@ -1,0 +1,11 @@
+package methodeGenerique_dansUneClasseStandard;
+
+
+//** ici il s'agit d'un type generiquque qui herite uniquement de la classe Produit**
+public class Traitement<T extends Produit> {
+
+	public Traitement() {
+		
+	}
+
+}

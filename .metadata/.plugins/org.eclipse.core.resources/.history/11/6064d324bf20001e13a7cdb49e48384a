@@ -1,0 +1,5 @@
+package z_creationDeClassExceptionPersonnalise;
+
+public class NegativeException {
+
+}

@@ -1,0 +1,11 @@
+package methodeGenerique_dansUneClasseStandard;
+
+public class Calcul {
+	
+	public <T1,T2> boolean comparer(T1 a, T2 b) {
+		
+		
+		
+	}
+
+}

@@ -1,0 +1,15 @@
+
+package fr.eni.annuaire.data;
+
+
+
+public record Utilisateurs(int id, String nom, String pseudo, String motPasse) {
+
+}
+
+
+
+
+
+ 
+

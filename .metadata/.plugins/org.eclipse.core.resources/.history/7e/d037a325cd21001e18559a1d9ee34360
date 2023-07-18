@@ -1,0 +1,15 @@
+package methodeGenerique_dansUneClasseStandard;
+
+public class Calcul {
+	
+	public <T> boolean comparer(T a, T b) {
+		// quand on compare des elements, 
+		// on ne peut pas comparer des éléments qui ne sont pas de meme types.
+		// il faut que ce soit du meme type
+		// La methode generique ne peut recevoir qu'un seul type.
+		
+		return a.equals(b);
+		
+	}
+
+}

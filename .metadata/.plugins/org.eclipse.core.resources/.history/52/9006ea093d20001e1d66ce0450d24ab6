@@ -1,0 +1,10 @@
+package ArrayList_et_Collection_avecPolymorphisme;
+
+public class Appli2_ArrayEtCollectionParPolymorphisme {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

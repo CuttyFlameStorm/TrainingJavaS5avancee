@@ -1,0 +1,17 @@
+package figures;
+
+public class Cercle {
+	private Point centre;
+	private double rayon;
+	
+	public Cercle(Point c, double r) {
+		this.centre=c;
+		this.rayon=r;
+	}
+	public Cercle(Point c, Point p) {
+		this.centre=c;
+		int a=p.x-centre.x;
+		int b=p.y-centre.y;
+		this.rayon=Math.sqrt(a*a+b*b);
+	}
+}

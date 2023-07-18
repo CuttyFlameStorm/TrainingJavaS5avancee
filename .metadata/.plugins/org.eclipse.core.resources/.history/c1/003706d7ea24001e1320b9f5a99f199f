@@ -1,0 +1,27 @@
+package fr.eni.annuaire.bo;
+
+public class Professionnel {
+    private String nomEntreprise;
+    private long numero;
+    private String nom;
+    private String telephone;
+    private String adresseMail;
+    private Adresse adresse;
+
+    public Professionnel(long numero, String nom, String telephone, String adresseMail, Adresse adresse, String nomEntreprise) {
+        this.numero = numero;
+        this.nom = nom;
+        this.telephone = telephone;
+        this.adresseMail = adresseMail;
+        this.adresse = adresse;
+        this.nomEntreprise = nomEntreprise;
+    }
+
+    public String getNature() {
+        return this.getClass().getSimpleName();
+    }
+
+    public String toString() {
+        return "Professionnel [nomEntreprise=" + nomEntreprise + ", numero=" + numero + ", nom=" + nom + ", telephone=" + telephone + ", adresseMail=" + adresseMail + ", adresse=" + adresse.toString() + "]";
+    }
+}

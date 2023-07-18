@@ -1,0 +1,10 @@
+package polimorphisme;
+
+public class Application {
+
+	public static void main(String[] args) {
+		Pomme p = new Pomme(40);
+
+	}
+
+}

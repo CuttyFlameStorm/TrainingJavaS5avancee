@@ -1,0 +1,11 @@
+package methodeGenerique_dansUneClasseStandard;
+
+import java.io.Serializable;
+
+public class Produit implements Serializable{
+
+	public Produit() {
+		
+	}
+
+}

@@ -1,0 +1,48 @@
+package Application;
+
+import java.time.LocalDate;
+
+import fr.eni.annuaire.bo.Adresse;
+import fr.eni.annuaire.bo.Contact;
+import fr.eni.annuaire.bo.Personnel;
+import fr.eni.annuaire.bo.Professionnel;
+import fr.eni.annuaire.bo.Utilisateur;
+import fr.eni.annuaire.data.Contacts;
+
+public class App1 {
+
+	public static void main(String[] args) {
+		// Création d'une adresse
+        Adresse adresse = new Adresse(12345, "Rue du Test", "12345", "Ville de Test");
+
+        // Création d'un utilisateur
+        Utilisateur utilisateur = new Utilisateur(1, "John Doe", "johndoe", "motdepasse");
+
+        // Création d'un contact professionnel
+        Professionnel professionnel = new Professionnel(123456, "Jane Entreprise", "0123456789", "jane@entreprise.com", adresse, "Nom Entreprise");
+        Contact contactPro = new Contact(1, "Jane Smith", "0123456789", "jane@exemple.com", false, adresse, null, professionnel);
+
+        // Création d'un contact personnel
+        LocalDate dateAnniversaire = LocalDate.of(1990, 5, 15);
+        Personnel personnel = new Personnel(dateAnniversaire);
+        Contact contactPerso = new Contact(2, "John Smith", "9876543210", "john@exemple.com", true, adresse, personnel, null);
+
+        // Création d'une liste de contacts
+        Contacts contacts = new Contacts(1, "Jane Smith", "0123456789", "jane@exemple.com", false, adresse, null, professionnel);
+        contacts.toContact(); // Convertir en objet Contact
+
+        // Affichage des informations
+        System.out.println("--- Informations de l'Utilisateur ---");
+        System.out.println(utilisateur.toString());
+
+        System.out.println("--- Informations du Contact Professionnel ---");
+        System.out.println(contactPro.toString());
+
+        System.out.println("--- Informations du Contact Personnel ---");
+        System.out.println(contactPerso.toString());
+
+        System.out.println("--- Informations des Contacts ---");
+        System.out.println(contacts.toString());
+    }
+
+}

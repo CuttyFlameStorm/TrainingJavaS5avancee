@@ -1,0 +1,36 @@
+package fr.eni.annuaire.bo;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import fr.eni.annuaire.data.Utilisateurs;
+
+public class Utilisateur {
+    private List<Utilisateurs> utilisateurs;
+
+    public Utilisateur() {
+        this.utilisateurs = new ArrayList<>();
+    }
+
+    public void ajouterUtilisateur(Utilisateurs utilisateur) {
+        utilisateurs.add(utilisateur);
+    }
+
+    public void supprimerUtilisateur(Utilisateurs utilisateur) {
+        utilisateurs.remove(utilisateur);
+    }
+
+    public List<Utilisateurs> getUtilisateurs() {
+        return utilisateurs;
+    }
+
+    public String toString() {
+        return "Utilisateur [utilisateurs=" + utilisateurs.toString() + "]";
+    }
+
+    public Utilisateurs creerUtilisateur(int id, String nom, String pseudo, String motPasse) {
+        Utilisateurs utilisateur = new Utilisateurs(id, nom, pseudo, motPasse);
+        utilisateurs.add(utilisateur);
+        return utilisateur;
+    }
+}

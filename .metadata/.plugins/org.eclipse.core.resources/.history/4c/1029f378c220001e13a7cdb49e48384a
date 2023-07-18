@@ -1,0 +1,17 @@
+package z_creationDeClassExceptionPersonnalise;
+
+public class NegativeException extends Exception{
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 6091992985133249866L;
+
+	public NegativeException(String message) {
+		super(message);
+		
+	}
+
+	
+	
+}

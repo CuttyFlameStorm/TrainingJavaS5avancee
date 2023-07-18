@@ -1,0 +1,9 @@
+package methodeGenerique_dansUneClasseStandard;
+
+public class ProduitLiquide {
+
+	public ProduitLiquide() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

@@ -1,0 +1,9 @@
+package methodeGenerique_dansUneClasseStandard;
+
+public class ProduitLiquide extends Produit{
+
+	public ProduitLiquide() {
+		
+	}
+
+}

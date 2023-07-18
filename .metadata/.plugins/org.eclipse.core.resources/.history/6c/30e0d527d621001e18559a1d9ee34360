@@ -1,0 +1,9 @@
+package InterfaceGenerique;
+
+public class Interface_generique {
+
+	public Interface_generique() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

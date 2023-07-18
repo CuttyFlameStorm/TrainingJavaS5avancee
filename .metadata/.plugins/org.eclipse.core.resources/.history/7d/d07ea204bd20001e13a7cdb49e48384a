@@ -1,0 +1,9 @@
+package z_creationDeClassExceptionPersonnalise;
+
+public class SoldeInsuffisantException {
+
+	public SoldeInsuffisantException() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

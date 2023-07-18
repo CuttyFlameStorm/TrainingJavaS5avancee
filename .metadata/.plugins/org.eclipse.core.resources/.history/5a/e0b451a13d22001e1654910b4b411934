@@ -1,0 +1,10 @@
+package Applications_Package;
+
+public class Serveur {
+
+	public static void main(String[] args) {
+		
+
+	}
+
+}

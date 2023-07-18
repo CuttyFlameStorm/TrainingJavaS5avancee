@@ -1,0 +1,37 @@
+package fr.eni.annuaire.bo;
+
+public class Contact {
+    private long numero;
+    private String nom;
+    private String telephone;
+    private String adresseMail;
+    private boolean favoris;
+    
+    private Adresse adresse;
+    private Personnel personnel;
+
+    public Contact(long numero, String nom, String telephone, String adresseMail, boolean favoris, Adresse adresse, Personnel personnel) {
+        this.numero = numero;
+        this.nom = nom;
+        this.telephone = telephone;
+        this.adresseMail = adresseMail;
+        this.favoris = favoris;
+        this.adresse = adresse;
+        this.personnel = personnel;
+        
+    }
+
+   
+
+    @Override
+	public String toString() {
+		return "Contact [numero=" + numero + ", nom=" + nom + ", telephone=" + telephone + ", adresseMail="
+				+ adresseMail + ", favoris=" + favoris + ", adresse=" + adresse + "]";
+	}
+
+
+
+	public String getNature() {
+        return this.getClass().getSimpleName();
+    }
+}

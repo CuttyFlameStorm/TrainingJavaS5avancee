@@ -1,0 +1,38 @@
+package ArrayList_et_Collection_avecPolymorphisme;
+
+import java.util.ArrayList;
+
+import polimorphisme.Fruit;
+import polimorphisme.Orange;
+import polimorphisme.Pomme;
+
+public class Appli2_ArrayEtCollectionParPolymorphisme {
+
+	public static void main(String[] args) {
+		System.out.println("activation de Appli2");
+		// ** utilisation d'une Arrays liste qui ne nécessite pas d'être défini en nombre de ligne au depart
+		//Exemple :
+		//On utilise les ArrayList différemment d'un tableau standard.
+		ArrayList<Fruit> fruits = new ArrayList<Fruit>();
+		fruits.add(new Pomme(60));
+		fruits.add(new Orange(90));
+		fruits.add(new Pomme(80));
+		fruits.add(new Pomme(70));
+		fruits.remove(0);  // voici un exemple de suppression. -> cela supprimera la ligne 0.
+		fruits.add(new Orange(95));
+		//voila la ArrayList est créé et peut avoir autant d'aujout de ligne que souhaité.
+		
+//		voila la méthode classique d'itération avec les ArrayList
+		for(int i=0;i<fruits.size();i++) { // ici "fruits.size()" remplace "fruits.length" comme pour les tableaux standardx.
+			fruits.get(i).affiche(); // pour acceder à un élément on utilise la méthode "get(i)"
+			
+		}
+		
+//		voila le nouceau modèle de boucle d'iteration avec les ArraysList
+		
+		                         
+		
+
+	}
+
+}

@@ -1,0 +1,59 @@
+package App;
+
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+public class Appareil implements IAppareil {
+	private List<Contact> contacts = new ArrayList<Contact>();
+	private Map<Integer, Appel> appels = new HashMap<Integer, Appel>();      // dans les Map on utilise des objets
+	
+
+	@Override
+	public void enregistrer(Contact c) {
+		contacts.add(c);
+		
+	}
+	
+	//un appel sera associé à un contact.
+	@Override
+	public void enregistrer(Appel a, String numTel) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public Contact consulter(int numero) throws Exception {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<Contact> consulter(String mc) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public double coutTotalAppels() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public double coutAppels(Date d1, Date d2) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public double coutAppels(int numero) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+	
+	
+
+}

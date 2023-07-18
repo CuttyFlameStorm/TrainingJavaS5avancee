@@ -1,0 +1,6 @@
+package genericite;
+
+public class Triplet extends Couple<T>{
+	
+
+}

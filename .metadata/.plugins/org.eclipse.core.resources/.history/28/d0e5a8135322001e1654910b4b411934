@@ -1,0 +1,17 @@
+package App;
+
+import java.util.Date;
+
+public abstract class Appel {
+	private int numero;
+	private Date dateAppel;
+	private double dureeAppel;
+	//un appel concerne un contact
+	private Contact contact;
+	
+	//pour chaque appel on aura besoin de connaitre le coup
+//	quand on a une méthode abstraite à l'intérieur de la class, la class elle meme doit etre abstraite
+	//methode
+	public abstract double cout();
+	
+}

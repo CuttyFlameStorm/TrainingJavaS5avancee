@@ -1,0 +1,5 @@
+package fr.eni.annuaire.data;
+
+public class Contacts {
+
+}

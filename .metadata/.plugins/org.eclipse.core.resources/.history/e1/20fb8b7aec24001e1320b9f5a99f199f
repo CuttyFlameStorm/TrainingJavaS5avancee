@@ -1,0 +1,11 @@
+package fr.eni.annuaire.data;
+
+import fr.eni.annuaire.bo.Utilisateur;
+
+public record Utilisateurs(int id, String nom, String pseudo, String motPasse) {
+	
+	public Utilisateur toUtilisateur() {
+        return new Utilisateur(id, nom, pseudo, motPasse);
+    }
+	
+}

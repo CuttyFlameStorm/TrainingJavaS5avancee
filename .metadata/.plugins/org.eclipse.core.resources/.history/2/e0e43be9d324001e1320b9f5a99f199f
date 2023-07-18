@@ -1,0 +1,8 @@
+package fr.eni.annuaire.data;
+
+public record Contacts(long numero, String nom, String telephone, String adresseMail, boolean favoris) {
+	
+	
+}
+
+

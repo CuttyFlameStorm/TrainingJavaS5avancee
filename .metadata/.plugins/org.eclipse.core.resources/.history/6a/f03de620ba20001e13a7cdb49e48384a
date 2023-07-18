@@ -1,0 +1,9 @@
+package DeclarationException1_app2_bis;
+
+public class App2 {
+
+	public App2() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

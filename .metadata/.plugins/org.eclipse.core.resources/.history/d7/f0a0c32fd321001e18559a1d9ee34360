@@ -1,0 +1,13 @@
+package Application;
+
+import methodeGenerique_dansUneClasseStandard.Produit;
+import methodeGenerique_dansUneClasseStandard.Traitement;
+
+public class App4 {
+
+	public static void main(String[] args) {
+		Traitement<Produit> t = new Traitement<Produit>();
+
+	}
+
+}

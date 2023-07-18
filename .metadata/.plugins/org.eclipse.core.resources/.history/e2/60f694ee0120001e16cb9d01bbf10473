@@ -1,0 +1,16 @@
+package test;
+
+import figures.Cercle;
+import figures.Point;
+
+public class Application {
+
+	public static void main(String[] args) {
+		
+		Point p = new Point(100, 100);
+		Cercle c1 = new Cercle(p, 50);
+		Cercle c2 = new Cercle(new Point(150, 150), new Point(200, 200));
+
+	}
+
+}

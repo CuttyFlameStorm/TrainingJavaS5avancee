@@ -1,0 +1,9 @@
+package methodeGenerique_dansUneClasseStandard;
+
+public class Traitement {
+
+	public Traitement() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

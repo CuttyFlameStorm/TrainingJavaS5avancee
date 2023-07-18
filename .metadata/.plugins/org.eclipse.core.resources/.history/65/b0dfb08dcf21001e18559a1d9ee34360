@@ -1,0 +1,21 @@
+package methodeGenerique_dansUneClasseStandard;
+
+public class Calcul {
+	
+	// constructeur sans parametre.
+	public Calcul() {
+		
+	}
+
+	//une méthode génrique peut etre déclarer à l'interieur d'une classe qui n'est pas générique.
+	public <T> boolean comparer(T a, T b) {  //comparer sera donc une methode generique de la classe Calcul
+		// quand on compare des elements, 
+		// on ne peut pas comparer des éléments qui ne sont pas de meme types.
+		// il faut que ce soit du meme type
+		// La methode generique ne peut recevoir qu'un seul type.
+		
+		return a.equals(b);
+		
+	}
+
+}

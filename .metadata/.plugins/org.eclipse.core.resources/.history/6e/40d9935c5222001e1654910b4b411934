@@ -1,0 +1,9 @@
+package App;
+
+import java.util.Date;
+
+public class Appel {
+	private int numero;
+	private Date dateAppel;
+	private double dureeAppel;
+}

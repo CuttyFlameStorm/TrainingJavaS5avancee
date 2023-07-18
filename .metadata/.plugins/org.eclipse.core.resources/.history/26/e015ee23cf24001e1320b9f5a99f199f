@@ -1,0 +1,29 @@
+
+package fr.eni.annuaire.data;
+import fr.eni.annuaire.bo.Utilisateur;
+
+
+public record Utilisateurs(int id, String nom, String pseudo, String motPasse) {
+
+}
+
+
+
+public class Utilisateur {
+    private int id;
+    private String nom;
+    private String pseudo;
+    private String motPasse;
+
+    public Utilisateur(int id, String nom, String pseudo, String motPasse) {
+        this.id = id;
+        this.nom = nom;
+        this.pseudo = pseudo;
+        this.motPasse = motPasse;
+    }
+
+    public String toString() {
+        return "Utilisateur [id=" + id + ", nom=" + nom + ", pseudo=" + pseudo + ", motPasse=" + motPasse + "]";
+    }
+}
+

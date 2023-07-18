@@ -1,0 +1,19 @@
+package App;
+
+public class Contact {
+	private int numero;
+	private String nom;
+	private String numeroTel;
+	
+	
+	private Appel appel;
+	public Contact(int numero, String nom, String numeroTel) {
+		super();
+		this.numero = numero;
+		this.nom = nom;
+		this.numeroTel = numeroTel;
+	}
+	
+	
+
+}

@@ -1,0 +1,9 @@
+package App;
+
+public class Contact {
+	private int numero;
+	private String nom;
+	private String numeroTel;
+	private Appel appel;
+
+}

@@ -1,0 +1,13 @@
+package App;
+
+public class AppelRecu extends Appel {
+
+	@Override
+	public double cout() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+	
+	
+
+}

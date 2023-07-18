@@ -1,0 +1,5 @@
+package polimorphisme;
+
+public abstract class Fruit {
+
+}

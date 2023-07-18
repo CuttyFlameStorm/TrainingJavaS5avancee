@@ -1,0 +1,14 @@
+package Application;
+
+import genericite.Couple;
+
+public class App {
+
+	public static void main(String[] args) {
+		// au moment de l'instanciation de la class generique, on a besoin de savoir le type
+		// exemple, on va creer un couple qui contient des objets Integer
+		Couple<Integer> c1 = new Couple<Integer>(3,5);
+
+	}
+
+}

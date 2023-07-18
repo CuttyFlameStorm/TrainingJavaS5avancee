@@ -1,0 +1,10 @@
+package methodeGenerique_dansUneClasseStandard;
+
+@SuppressWarnings("serial")
+public class ProduitLiquide extends Produit{
+
+	public ProduitLiquide() {
+		
+	}
+
+}

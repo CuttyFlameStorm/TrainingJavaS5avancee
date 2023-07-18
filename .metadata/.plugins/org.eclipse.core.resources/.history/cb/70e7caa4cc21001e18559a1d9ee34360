@@ -1,0 +1,12 @@
+package methodeGenerique_dansUneClasseStandard;
+
+public class Calcul {
+	
+	public <T1,T2> boolean comparer(T1 a, T2 b) {
+		// quand on compare des elements, 
+		// on ne peut pas comparer des éléments qui ne sont pas de meme types.
+		
+		
+	}
+
+}
