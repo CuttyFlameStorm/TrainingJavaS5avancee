@@ -1,32 +1,22 @@
 package fr.eni.annuaire.bo;
 
-import fr.eni.annuaire.data.Utilisateurs;
-
-import java.util.ArrayList;
-import java.util.List;
-
 public class Utilisateur {
-	
+    private int id;
+    private String username;
+    private String password;
+    private String displayName;
 
-	private List<Utilisateurs> utilisateurs;
-
-    public Utilisateur(int i, String string, String string2, String string3) {
-        this.utilisateurs = new ArrayList<>();
+    public Utilisateur(int id, String username, String password, String displayName) {
+        this.id = id;
+        this.username = username;
+        this.password = password;
+        this.displayName = displayName;
     }
 
-    public void ajouterUtilisateur(Utilisateurs utilisateur) {
-        utilisateurs.add(utilisateur);
-    }
+    // Getters et setters (à définir selon vos besoins)
 
-    public void supprimerUtilisateur(Utilisateurs utilisateur) {
-        utilisateurs.remove(utilisateur);
-    }
-
-    public List<Utilisateurs> getUtilisateurs() {
-        return utilisateurs;
-    }
-
+    @Override
     public String toString() {
-        return "Utilisateur [utilisateurs=" + utilisateurs.toString() + "]";
+        return "Utilisateur [id=" + id + ", username=" + username + ", password=" + password + ", displayName=" + displayName + "]";
     }
 }

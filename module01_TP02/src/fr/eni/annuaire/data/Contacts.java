@@ -1,13 +1,9 @@
 package fr.eni.annuaire.data;
 
 import fr.eni.annuaire.bo.Contact;
-import fr.eni.annuaire.bo.Personnel;
-import fr.eni.annuaire.bo.Professionnel;
-import fr.eni.annuaire.bo.Adresse;
 
-public record Contacts(long numero, String nom, String telephone, String adresseMail, boolean favoris, Adresse adresse, Personnel personnel, Professionnel professionnel) {
-	
-    public Contact toContact() {
-        return new Contact();
-    }
+import java.util.List;
+
+public record Contacts(List<Contact> contacts) {
+   
 }
